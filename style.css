@@ -1,16 +1,60 @@
-ul {
+:root {
+  --some-variable: #09c;
+}
+
+#fake-id ul {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #93c;
   /*  Hex digits: 0123456789ABCDEF */
   color: rgb(173, 156, 212);
 }
 
-ul.fancy-ul {
+#fake-id ul.fancy-ul {
   color: rgb(226, 224, 86);
   width: 50%;
   margin: 1rem auto;
 }
 
-ul.fancy-ul li:nth-child(2n) {
+#fake-id ul.fancy-ul li:nth-child(2n) {
   background-color: rgb(27, 154, 158);
+}
+
+.unit-header span {
+  font-weight: 700;
+}
+
+.unit-header .activity-count {
+  font-weight: 500;
+}
+
+.unit-item {
+  min-height: 5rem;
+  --dot-color: rgb(191, 191, 191);
+}
+
+.unit-item-number,
+.unit-item-checkbox {
+  background-color: var(--dot-color);
+  border-radius: 50%;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  color: var(--bs-body-bg);
+  font-weight: 900;
+}
+
+.unit-item-checkbox {
+  margin-left: auto;
+  width: 2rem;
+}
+
+.unit-item-name {
+  height: 3rem !important;
+}
+
+.unit-item-name span:first-child {
+  font-weight: 700;
+  text-transform: uppercase;
 }
