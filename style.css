@@ -58,3 +58,11 @@
   font-weight: 700;
   text-transform: uppercase;
 }
+
+.sidebar-list-group > a.list-group-item {
+  border-right: none;
+  border-left: none;
+  border-radius: 0;
+  margin-left: -1rem;
+  width: calc(100% + 2rem);
+}

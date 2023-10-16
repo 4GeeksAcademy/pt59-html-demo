@@ -9,10 +9,75 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
+    <nav class="navbar sticky-top bg-body-tertiary">
+      <div class="container-fluid">
+        <a
+          class="navbar-brand"
+          data-bs-toggle="offcanvas"
+          href="#offcanvasExample"
+          role="button"
+          aria-controls="offcanvasExample"
+        >
+          Ecommerce Wobsite
+        </a>
+      </div>
+    </nav>
     <div class="container">
-      <div>
+      <section>
+        <div
+          class="offcanvas offcanvas-start"
+          tabindex="-1"
+          id="offcanvasExample"
+          aria-labelledby="offcanvasExampleLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+              Hello Valued Customer!
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="list-group sidebar-list-group">
+              <a class="list-group-item list-group-item-action" href="#">
+                Item number 1
+              </a>
+              <a href="#" class="list-group-item list-group-item-action">
+                Item number 2
+              </a>
+              <a href="#" class="list-group-item list-group-item-action">
+                Item number 3
+              </a>
+              <a href="#" class="list-group-item list-group-item-action">
+                Item number 4
+              </a>
+              <a href="#" class="list-group-item list-group-item-action">
+                Item number 5
+              </a>
+              <a href="#" class="list-group-item list-group-item-action">
+                Item number 6
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+
+      <section>
         <div class="d-flex flex-row justify-content-between unit-header">
           <span>HTML/CSS</span>
           <span class="activity-count">3 ACTIVITIES</span>
@@ -32,7 +97,9 @@
             <span>Filler</span>
             <span>Description</span>
           </div>
-          <div class="unit-item-checkbox"></div>
+          <div class="unit-item-checkbox">
+            <i class="fa-solid fa-circle-check"></i>
+          </div>
         </div>
         <div
           class="unit-item d-flex flex-row justify-content-start align-items-center border border-light rounded mb-3 p-2 gap-4"
@@ -56,9 +123,7 @@
           </div>
           <div class="unit-item-checkbox"></div>
         </div>
-      </div>
-
-      <hr />
+      </section>
 
       <section>
         <h1>"Meaningless" Tags</h1>
