@@ -32,6 +32,134 @@
       </div>
     </nav>
     <div class="container">
+      <section class="mt-2">
+        <h1>HTML Forms</h1>
+        <form action="https://some_url.tld/whatever" method="get">
+          <h2>Forms With Actions!</h2>
+          <input type="text" />
+        </form>
+        <form action="https://some_url.tld/whatever" method="post">
+          <h2>Forms With Actions!</h2>
+          <input type="text" />
+        </form>
+        <form>
+          <div class="d-flex flex-column justify-content-between gap-2">
+            <fieldset class="d-flex flex-column justify-content-between gap-1">
+              <h2>Text Inputs</h2>
+              <label for="email_input">Email Input</label>
+              <input type="email" id="email_input" name="" id="" />
+              <label for="pass_input">Password Input</label>
+              <input type="password" id="pass_input" name="" id="" />
+              <label for="search_input">Search Input</label>
+              <input type="search" id="search_input" name="" id="" />
+              <label for="text_input">Text Input</label>
+              <input type="text" id="text_input" name="" id="" />
+              <label for="url_input">URL Input</label>
+              <input type="url" id="url_input" name="" id="" />
+            </fieldset>
+            <fieldset class="d-flex flex-column justify-content-between gap-1">
+              <h2>Button Inputs (Old Style)</h2>
+              <input type="button" value="button" />
+              <input type="reset" value="reset" />
+              <input type="submit" value="submit" />
+            </fieldset>
+            <fieldset class="d-flex flex-column justify-content-between gap-1">
+              <h2>Button Inputs (The not ancient style.)</h2>
+              <button class="btn btn-primary" type="button">
+                This is a new button.
+              </button>
+              <button class="btn btn-secondary" disabled="disabled">
+                This button is unclickable.
+              </button>
+              <button class="btn btn-danger" type="reset">
+                This is a reset button.
+              </button>
+              <button class="btn btn-success" type="submit">
+                This is a submit button.
+              </button>
+            </fieldset>
+            <fieldset>
+              <h2>Checkboxes</h2>
+              <label for="checkbox_1">1</label>
+              <input
+                type="checkbox"
+                name="checkboxes_arent_exclusive"
+                id="checkbox_1"
+              />
+              <label for="checkbox_2">2</label>
+              <input
+                type="checkbox"
+                name="checkboxes_arent_exclusive"
+                id="checkbox_2"
+              />
+              <label for="checkbox_3">3</label>
+              <input
+                type="checkbox"
+                name="checkboxes_arent_exclusive"
+                id="checkbox_3"
+              />
+              <label for="checkbox_4">4</label>
+              <input
+                type="checkbox"
+                name="checkboxes_arent_exclusive"
+                id="checkbox_4"
+              />
+              <label for="checkbox_5">5</label>
+              <input
+                type="checkbox"
+                name="checkboxes_arent_exclusive"
+                id="checkbox_5"
+              />
+            </fieldset>
+            <fieldset>
+              <h2>Radio Buttons</h2>
+              <label for="radio_1">1</label>
+              <input type="radio" name="radio_is_exclusive" id="radio_1" />
+              <label for="radio_2">2</label>
+              <input type="radio" name="radio_is_exclusive" id="radio_2" />
+              <label for="radio_3">3</label>
+              <input type="radio" name="radio_is_exclusive" id="radio_3" />
+              <label for="radio_4">4</label>
+              <input type="radio" name="radio_is_exclusive" id="radio_4" />
+              <label for="radio_5">5</label>
+              <input type="radio" name="radio_is_exclusive" id="radio_5" />
+            </fieldset>
+            <fieldset class="d-flex flex-column justify-content-between gap-1">
+              <h2>Date/Time</h2>
+              <input type="date" name="" id="" />
+              <input type="datetime" name="" id="" />
+              <input type="datetime-local" name="" id="" />
+              <input type="month" name="" id="" />
+              <input type="week" name="" id="" />
+              <input type="time" name="" id="" />
+            </fieldset>
+            <fieldset class="d-flex flex-column justify-content-between gap-1">
+              <h2>Numeric Inputs</h2>
+              <input type="number" name="" id="" />
+              <input type="range" name="" id="" />
+            </fieldset>
+            <fieldset class="d-flex flex-column justify-content-between gap-1">
+              <h2>Other Inputs</h2>
+              <input type="file" name="" id="" />
+              <input type="color" name="" id="" />
+              <select name="" id="">
+                <option>Default Option</option>
+                <option value="value1">Some selectable option</option>
+                <option value="value2">Another selectable option</option>
+                <option value="value3">Some other selectable option</option>
+                <option value="value4" disabled>An unselectable options</option>
+              </select>
+            </fieldset>
+            <fieldset class="d-flex flex-column justify-content-between gap-1">
+              <h2>Hidden Inputs</h2>
+              <input type="hidden" name="" />
+            </fieldset>
+          </div>
+        </form>
+      </section>
+
+      <hr />
+
       <section>
         <div
           class="offcanvas offcanvas-start"
@@ -74,8 +202,6 @@
           </div>
         </div>
       </section>
-
-      <hr />
 
       <section>
         <div class="d-flex flex-row justify-content-between unit-header">
